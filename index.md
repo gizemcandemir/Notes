@@ -7,7 +7,7 @@ I will be collecting my notes and sharing my final versions for the challenges h
 
 ### JavaScript30
 
-The good old [#JavaScript30](https://javascript30.com/) challenge by Wes Bos. You can see the list of all challenges [here](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH). 
+The good old [#JavaScript30](https://javascript30.com/) challenge by Wes Bos.  You can see the list of all challenges [here](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH). 
 
 #### 01 - Drum Kit
 My version: [http://js30-01-drum-kit.surge.sh/](http://js30-01-drum-kit.surge.sh/)  

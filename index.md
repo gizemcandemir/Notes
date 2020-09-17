@@ -1,9 +1,9 @@
 # Gizem Candemir
 ## UX/UI Designer & Frontend Developer
 
-Hi, I want to share my notes from tutorials online! /n
-So here I am, starting with [#JavaScript30](https://javascript30.com/) challenge by Wes Bos. /n
-I will be collecting my notes and sharing my final versions for the challenges here. /n
+Hi, I want to share my notes from tutorials online!  
+So here I am, starting with [#JavaScript30](https://javascript30.com/) challenge by Wes Bos.  
+I will be collecting my notes and sharing my final versions for the challenges here.  
 I hope it's useful to someone :)
 
 ### 01 - Drum Kit

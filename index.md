@@ -17,7 +17,7 @@ My version: [http://js30-01-drum-kit.surge.sh/](http://js30-01-drum-kit.surge.sh
 My version: [http://pastel-clock.surge.sh/](http://pastel-clock.surge.sh/)  
 (Click [here](https://github.com/gizemcandemir/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock/index.html) to see it on GitHub)
 
-#### 04 - Array Cardio 1
+#### 04 - Array Cardio Day 1
 
 (Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/index.html) to see it on GitHub)
 
@@ -71,7 +71,7 @@ function findMatches(wordToMatch, cities) {
 };
 ```
 
-#### 07 - Array Cardio 2
+#### 07 - Array Cardio Day 2
 
 (Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/07%20-%20Array%20Cardio%20Day%202/index-START.html) to see it on GitHub)
 

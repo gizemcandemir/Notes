@@ -43,6 +43,18 @@ const transportation = data.reduce((obj, item) => {
 }, {})
 ```
 
+#### 05 - Flex Panel Gallery
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+// Adds or removes the class 'open' from the DOM element where this function is triggered (by using 'this')
+function toggleOpen() {
+  this.classList.toggle('open');
+}
+```
+
 #### 06 - Type Ahead
 
 My version (same as original): [http://type-ahead.surge.sh/](http://type-ahead.surge.sh/)  

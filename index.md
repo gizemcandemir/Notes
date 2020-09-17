@@ -62,6 +62,7 @@ My version (same as original): [http://type-ahead.surge.sh/](http://type-ahead.s
 
 Notes:
 ```javascript
+//Using Regular Expressions
 function findMatches(wordToMatch, cities) {
   return cities.filter(place => {
     const regex = new RegExp(wordToMatch, 'gi'); //gi means global, insensitive

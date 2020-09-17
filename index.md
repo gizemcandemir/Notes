@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+# Gizem Candemir
+## UX/UI Designer & Frontend Developer
 
 You can use the [editor on GitHub](https://github.com/gizemcandemir/gizemcandemir.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 

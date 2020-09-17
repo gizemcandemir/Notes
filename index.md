@@ -35,12 +35,45 @@ console.log('A string with %s is included', 'What we write here will be replacin
 // Styled
 console.log('using %c will let you style on next argument', 'background:red')
 
-// Warning!
+// Warning
 console.warn('shows this in the warning style');
 
-// Error :|
+// Error
 console.error('shows this in the error style');
 
 // Info
 console.info('shows this in the info style');
+
+// Testing
+const p = document.querySelector('p');
+console.assert(p.classList.contains('ouch'), 'That is wrong!'); //will only console if that is wrong
+
+// Clearing
+console.clear();
+
+// Viewing DOM Elements with all the available methods and calls
+console.dir(p);
+
+// Grouping together
+dogs.forEach(dog => {
+  console.groupCollapsed(`${dog.name}`);
+  console.log(`This is ${dog.name}`);
+  console.log(`${dog.name} is ${dog.age} years old`);
+  console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+  console.groupEnd(`${dog.name}`);
+});
+
+// Counting
+console.count(var);
+
+// Timing
+console.time('fetching data');
+fetch('https://api.github.com/users/wesbos')
+  .then(data => data.json())
+  .then(data => {
+    console.timeEnd('fetching data');
+  });
+
+// Shows result in table
+console.table(dogs);
 ```

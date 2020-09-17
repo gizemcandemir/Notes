@@ -18,26 +18,29 @@ My version: [http://pastel-clock.surge.sh/](http://pastel-clock.surge.sh/)
 (Click [here](https://github.com/gizemcandemir/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock/index.html) to see it on GitHub)
 
 #### 08 - Fun with HTML5 Canvas
+
 My version: [hue-paint.surge.sh](hue-paint.surge.sh)  
 (Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) to see it on GitHub)
 
 #### 09 - 14 Must Know Dev Tools Tricks
+
+
 ```javascript
 // Regular
 console.log('hello');
 
 // Interpolated
-console.log('Hello I am a %s string!', '💩');
+console.log('A string with %s is included', 'What we write here will be replacing "percent-symbol-s" in previous argument');
 
 // Styled
-console.log('%c I am some great text', 'background:red')
+console.log('using %c will let you style on next argument', 'background:red')
 
 // Warning!
-console.warn('OH NOOO');
+console.warn('shows this in the warning style');
 
 // Error :|
-console.error('Shit!');
+console.error('shows this in the error style');
 
 // Info
-console.info('Crocodiles eat 3-4 people per year');
+console.info('shows this in the info style');
 ```

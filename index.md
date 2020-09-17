@@ -71,6 +71,24 @@ function findMatches(wordToMatch, cities) {
 };
 ```
 
+#### 07 - Array Cardio 2
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/07%20-%20Array%20Cardio%20Day%202/index-START.html) to see it on GitHub)
+
+Notes:
+```javascript
+array.some(); //checks if at least one...
+array.every(); //checks if every element...
+array.find(); //returns what you are looking for
+array.findIndex(); //returns index id
+
+//common way to create new array after deleting one element with index
+const newComments = [
+  ...comments.slice(0, index),
+  ...comments.slice(index + 1)
+]
+```
+
 #### 08 - Fun with HTML5 Canvas
 
 My version: [http://hue-paint.surge.sh/](http://hue-paint.surge.sh/)  

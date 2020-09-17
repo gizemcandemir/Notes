@@ -17,6 +17,32 @@ My version: [http://js30-01-drum-kit.surge.sh/](http://js30-01-drum-kit.surge.sh
 My version: [http://pastel-clock.surge.sh/](http://pastel-clock.surge.sh/)  
 (Click [here](https://github.com/gizemcandemir/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock/index.html) to see it on GitHub)
 
+#### 04 - Array Cardio 1
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+// Sorts the result from oldest to youngest
+inventors.sort((a, b) => a.year > b.year)
+
+// Gives the total sum of years inventors lived
+const totalYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.passed - inventor.year);
+}, 0);
+
+// Sums up the instances of each item in the array
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+const transportation = data.reduce((obj, item) => {
+  if(!obj[item]) {
+    obj[item] = 0;
+  } 
+    obj[item]++
+    return obj;
+}, {})
+```
+
 #### 06 - Type Ahead
 
 My version (same as original): [http://type-ahead.surge.sh/](http://type-ahead.surge.sh/)  

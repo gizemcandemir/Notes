@@ -17,6 +17,21 @@ My version: [http://js30-01-drum-kit.surge.sh/](http://js30-01-drum-kit.surge.sh
 My version: [http://pastel-clock.surge.sh/](http://pastel-clock.surge.sh/)  
 (Click [here](https://github.com/gizemcandemir/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock/index.html) to see it on GitHub)
 
+#### 06 - Type Ahead
+
+My version (same as original): [http://type-ahead.surge.sh/](http://type-ahead.surge.sh/)  
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/06%20-%20Type%20Ahead/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+function findMatches(wordToMatch, cities) {
+  return cities.filter(place => {
+    const regex = new RegExp(wordToMatch, 'gi'); //gi means global, insensitive
+    return place.city.match(regex) || place.state.match(regex)
+  });
+};
+```
+
 #### 08 - Fun with HTML5 Canvas
 
 My version: [hue-paint.surge.sh](hue-paint.surge.sh)  

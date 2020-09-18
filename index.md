@@ -153,3 +153,13 @@ fetch('https://api.github.com/users/wesbos')
 // Shows result in table
 console.table(dogs);
 ```
+
+#### 10 - Hold Shift to Check Multiple Checkboxes
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+ document.querySelectorAll() // returns an array with specified elements
+]
+```

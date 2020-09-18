@@ -161,5 +161,4 @@ console.table(dogs);
 Notes:
 ```javascript
  document.querySelectorAll() // returns an array with specified elements
-]
 ```

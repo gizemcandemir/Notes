@@ -161,4 +161,32 @@ console.table(dogs);
 Notes:
 ```javascript
  document.querySelectorAll() // returns an array with specified elements
+ 
+ // will play or pause the video depending on the video is already paused or not
+ function togglePlay() {
+  const method = video.paused ? 'play' : 'pause';
+  video[method]();
+}
+
+// 
+function handleRangeUpdate() {
+  video[this.name] = this.value;
+}
+```
+
+#### 12 - Key Sequence Detection
+
+My version: [http://js30-konami-code.surge.sh/](http://js30-konami-code.surge.sh/)
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/12%20-%20Key%20Sequence%20Detection/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+// The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// this one modifies the array to keep only secretCode length amount of elements from the end
+pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length); 
+
+// The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+if(pressed.join('').includes(secretCode)) {
+  ...
+}
 ```

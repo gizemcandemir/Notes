@@ -176,7 +176,7 @@ function handleRangeUpdate() {
 
 #### 12 - Key Sequence Detection
 
-My version: [http://js30-konami-code.surge.sh/](http://js30-konami-code.surge.sh/)
+My version: [http://js30-konami-code.surge.sh/](http://js30-konami-code.surge.sh/)  
 (Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/12%20-%20Key%20Sequence%20Detection/index.html) to see it on GitHub)
 
 Notes:

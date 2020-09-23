@@ -211,48 +211,35 @@ function debounce(func, wait = 20, immediate = true) {
 
 Notes:
 ```markdown
-if you assign a value to a **reference** it is actually updating the original. 
-```
-```javascript
+// if you assign a value to a **reference** it is actually updating the original. 
+
 let players = [a, b, c];
 let team = players;
 let team[2] = d
 console.log(players); 
-//output will be [a, b, d]
-```
-```markdown
-if you **slice** the array and assign it to a variable. That new variable will be the copy of the original array. So when you update the **copy**, it won't update the original array.
-```
-```javascript
-const team2 = players.slice();
-```
-```markdown
-or you can **concatenate** the original array to a new empty one.
-```
-```javascript
-const team3 = [].concat(players);
-```
-```markdown
-or you can **spread** the old array into a new array with ES6.
-```
-```javascript
-const team4 = [...players];
-```
-```markdown
-or you can create a new array with **Array.from()**
-```
-```javascript
-const team5 = Array.from(players);
-```
+// output will be [a, b, d]
 
-```markdown
-however if you reference a variable with an Object, and if you edit the reference you also update the original object. 
+// if you **slice** the array and assign it to a variable. That new variable will be the copy of the original array. So when you update the **copy**, it won't update the original array.
+
+const team2 = players.slice();
+
+// or you can **concatenate** the original array to a new empty one.
+
+const team3 = [].concat(players);
+
+// or you can **spread** the old array into a new array with ES6.
+
+const team4 = [...players];
+
+// or you can create a new array with **Array.from()**
+
+const team5 = Array.from(players);
+
+// however if you reference a variable with an Object, and if you edit the reference you also update the original object. 
 instead of referencing you need to create a copy for objects with **Object.assign** or as of 2018 you can also spread objects.
-```
-```javascript
+
 const cap2 = Object.assign({}, person, { number: 99 });
 const cap2 = { ...person }
-```
-```markdown
-when you use **Object.assign** it only copies the object one level deep. if you update the new object's deeper level variables the original will be updated too. to avoid it you can find the **cloneDeep** function online. Or you can use 'poorman's deepClone' by turning object to string with **JSON.stringify** and that string back to object with **JSON.parse()**  OR nowadays you can just use spread operator **{ ... object }** instead.
+
+// when you use **Object.assign** it only copies the object one level deep. if you update the new object's deeper level variables the original will be updated too. to avoid it you can find the **cloneDeep** function online. Or you can use 'poorman's deepClone' by turning object to string with **JSON.stringify** and that string back to object with **JSON.parse()**  OR nowadays you can just use spread operator **{ ... object }** instead.
 ```

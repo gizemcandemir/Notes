@@ -190,3 +190,17 @@ if(pressed.join('').includes(secretCode)) {
   ...
 }
 ```
+
+#### 13 - Slide In on Scroll
+
+My version: [http://js30-slide-in.surge.sh/](http://js30-slide-in.surge.sh/)  
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+// debounce means we will only run the specified function at most at the specified time
+function debounce(func, wait = 20, immediate = true) {
+  ...
+}
+
+```

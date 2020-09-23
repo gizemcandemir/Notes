@@ -204,3 +204,43 @@ function debounce(func, wait = 20, immediate = true) {
 }
 
 ```
+
+#### 14 - Object and Arrays
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copying/index-START.html) to see it on GitHub)
+
+Notes:
+```markdown
+if you assign a value to a **reference** it is actually updating the original. 
+```
+```javascript
+let players = [a, b, c];
+let team = players;
+let team[2] = d
+console.log(players); 
+//output will be [a, b, d]
+```
+```markdown
+if you **slice** the array and assign it to a variable. That new variable will be the copy of the original array. So when you update the **copy**, it won't update the original array.
+```
+```javascript
+const team2 = players.slice();
+```
+```markdown
+or you can **concatenate** the original array to a new empty one.
+```
+```javascript
+const team3 = [].concat(players);
+```
+```markdown
+or you can **spread** the old array into a new array with ES6.
+```
+```javascript
+const team4 = [...players];
+```
+```markdown
+or you can create a new array with **Array.from()**
+```
+```javascript
+const team5 = Array.from(players);
+```

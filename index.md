@@ -207,8 +207,6 @@ function debounce(func, wait = 20, immediate = true) {
 
 #### 14 - Object and Arrays
 
-(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copying/index-START.html) to see it on GitHub)
-
 Notes:
 ```markdown
 // if you assign a value to a **reference** it is actually updating the original. 

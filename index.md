@@ -244,3 +244,15 @@ or you can create a new array with **Array.from()**
 ```javascript
 const team5 = Array.from(players);
 ```
+
+```markdown
+however if you reference a variable with an Object, and if you edit the reference you also update the original object. 
+instead of referencing you need to create a copy for objects with **Object.assign** or as of 2018 you can also spread objects.
+```
+```javascript
+const cap2 = Object.assign({}, person, { number: 99 });
+const cap2 = { ...person }
+```
+```markdown
+when you use **Object.assign** it only copies the object one level deep. if you update the new object's deeper level variables the original will be updated too. to avoid it you can find the **cloneDeep** function online. Or you can use 'poorman's deepClone' by turning object to string with **JSON.stringify** and that string back to object with **JSON.parse()**  OR nowadays you can just use spread operator **{ ... object }** instead.
+```

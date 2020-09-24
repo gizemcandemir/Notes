@@ -251,3 +251,17 @@ Notes:
 // you can add items to LocalStorage so your list will stay same when page is reloaded
 localStorage.setItem('items', JSON.stringify(items));
 ```
+
+#### 16 - CSS Text Shadow Mouse Move Effect
+
+My version: [http://mouse-move.surge.sh/](http://mouse-move.surge.sh/)  
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+//if you need to you get mouse position you need to calculate specially for nested elements.
+if(this !== e.target) {
+  x = x + e.target.offsetLeft;
+  y = y + e.target.offsetTop;
+}
+```

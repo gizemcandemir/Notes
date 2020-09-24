@@ -202,7 +202,6 @@ Notes:
 function debounce(func, wait = 20, immediate = true) {
   ...
 }
-
 ```
 
 #### 14 - Object and Arrays
@@ -240,4 +239,15 @@ const cap2 = Object.assign({}, person, { number: 99 });
 const cap2 = { ...person }
 
 // when you use **Object.assign** it only copies the object one level deep. if you update the new object's deeper level variables the original will be updated too. to avoid it you can find the **cloneDeep** function online. Or you can use 'poorman's deepClone' by turning object to string with **JSON.stringify** and that string back to object with **JSON.parse()**  OR nowadays you can just use spread operator **{ ... object }** instead.
+```
+
+#### 15 - Local Storage and Event Delegation
+
+My version: [http://js30-15-local-tapas.surge.sh/](http://js30-15-local-tapas.surge.sh/)  
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/15%20-%20LocalStorage/index.html) to see it on GitHub)
+
+Notes:
+```javascript
+// you can add items to LocalStorage so your list will stay same when page is reloaded
+localStorage.setItem('items', JSON.stringify(items));
 ```

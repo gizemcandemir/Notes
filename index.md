@@ -294,7 +294,7 @@ console.log(greeting.trim());
 // expected output: "Hello world!";
 ```
 ```markdown
-// when you assign an innerHTML to an element it's calling **.toString()** on it so it will put commas between each elements. We need to add **join('')** at the end so it will not be bunch of strings with a comma in between.
+// when you assign an innerHTML to an element it's calling **.toString()** on it so it will put commas between each elements. We need to add **.join('')** at the end so it will not be bunch of strings with a comma in between.
 document.querySelector('#bands').innerHTML = 
   sortedBands
     .map(band => `<li>${band}</li>`)

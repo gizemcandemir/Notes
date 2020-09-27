@@ -282,7 +282,8 @@ console.log(p.replace(regex, 'ferret'));
 
 console.log(p.replace('dog', 'monkey'));
 // expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
-
+```
+```javascript
 // The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
 const greeting = '   Hello world!   ';
 
@@ -291,7 +292,8 @@ console.log(greeting);
 
 console.log(greeting.trim());
 // expected output: "Hello world!";
-
+```
+```javascript
 // when you assign an innerHTML to an element it's calling **.toString()** on it so it will put commas between each elements. We need to add **join('')** at the end so it will not be bunch of strings with a comma in between.
 document.querySelector('#bands').innerHTML = 
   sortedBands

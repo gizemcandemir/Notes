@@ -265,3 +265,36 @@ if(this !== e.target) {
   y = y + e.target.offsetTop;
 }
 ```
+
+#### 17 - Sorting Band Names without Articles
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/index-START.html) to see it on GitHub)
+
+Notes:
+```javascript
+// The replace() method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced.
+const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+const regex = /dog/gi;
+
+console.log(p.replace(regex, 'ferret'));
+// expected output: "The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?"
+
+console.log(p.replace('dog', 'monkey'));
+// expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+
+// The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
+const greeting = '   Hello world!   ';
+
+console.log(greeting);
+// expected output: "   Hello world!   ";
+
+console.log(greeting.trim());
+// expected output: "Hello world!";
+
+// when you assign an innerHTML to an element it's calling **.toString()** on it so it will put commas between each elements. We need to add **join('')** at the end so it will not be bunch of strings with a comma in between.
+document.querySelector('#bands').innerHTML = 
+  sortedBands
+    .map(band => `<li>${band}</li>`)
+    .join('');
+```

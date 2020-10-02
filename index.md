@@ -300,3 +300,14 @@ document.querySelector('#bands').innerHTML =
     .map(band => `<li>${band}</li>`)
     .join('');
 ```
+
+#### 18 - Adding Up Times with Reduce
+
+(Click [here](https://github.com/gizemcandemir/JavaScript30/blob/master/18%20-%20Adding%20Up%20Times%20with%20Reduce/index-START.html) to see it on GitHub)
+
+Notes:
+```javascript
+// The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number.
+
+const [mins, secs] = timeCode.split(':').map(parseFloat);
+```
